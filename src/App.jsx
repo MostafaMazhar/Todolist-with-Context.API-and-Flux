@@ -22,6 +22,7 @@ export default function App() {
     <>
       <form onSubmit={handleSubmit} className="new-item-form">
         <div className="form-row">
+          <h1 className="header">Todos</h1>
           <label htmlFor="item">New Item</label>
           <input
             value={newItem}
@@ -32,7 +33,7 @@ export default function App() {
         </div>
         <button className="btn">Add</button>
       </form>
-      <h1 className="header">To Do List</h1>
+
       {todoContext.todos.length === 0 ? (
         <p className="no-tasks">No tasks, add a task</p>
       ) : (
